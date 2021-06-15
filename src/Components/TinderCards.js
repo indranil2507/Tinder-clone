@@ -36,20 +36,28 @@ function TinderCards() {
         <div className="tinderCards">
         
             <div className="tinderCards__cardContainer">
+              
                 {people.map((person)=>(
                      <TinderCard className="swipe"
                      key={person.id}
                      preventSwipe={["up","down"]}
                      onSwipe={(dir) => swiped(dir,person.name)}
                      onCardLeftScreen={()=>outOfFrame(person.name)}>
-         
-         <div 
+                      <div className="cardContent">
+                      <div 
                      style={{backgroundImage:`url(${person.image})`}}
                      className="card">
                          <h3>{person.name}</h3>
                      </div>
+
+                      </div>
+         
+                   
                      </TinderCard>
                 ))}
+
+                
+               
             
 
             </div>
