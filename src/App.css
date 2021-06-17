@@ -1,0 +1,13 @@
+.app{
+    display: flex;
+    flex-direction: row;
+}
+.sideSection{
+    width:20%;
+    border-right: 1px solid  #f9f9f9;
+    height: 100vh;
+    
+}
+.mainSection{
+    width:80%
+}

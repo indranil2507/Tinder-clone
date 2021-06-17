@@ -1,26 +1,10 @@
 import React,{useState} from 'react'
 import TinderCard from 'react-tinder-card'
+import People from '../shared/Data'
 import './TinderCard.css'
 
 function TinderCards() {
-    const [people,setPeople]=useState([
-        {
-        id: 1,
-        name: 'susan smith',
-       
-        image:
-          'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
-      
-      },
-      {
-        id: 2,
-        name: 'anna johnson',
-        
-        image:
-          'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg',
-       
-      }
-    ]);
+    const [people,setPeople]=useState(People);
 
     const swiped = (direction, nameToDelete)=>{
         console.log("removing :" + nameToDelete);
@@ -36,8 +20,13 @@ function TinderCards() {
         <div className="tinderCards">
         
             <div className="tinderCards__cardContainer">
+
               
-                {people.map((person)=>(
+                {
+                
+                people.map((person)=>(
+                    
+                   
                      <TinderCard className="swipe"
                      key={person.id}
                      preventSwipe={["up","down"]}
