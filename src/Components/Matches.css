@@ -1,0 +1,32 @@
+.matches{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 5px 15px;
+
+}
+
+.card-match{
+    height: 105px;
+    width: 75px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    padding:0px 10px;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+.match-name{
+    font-size: 16px;
+    color: #fff;
+    margin-top: 60px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.card-match:hover{
+    height: 110px;
+    width: 80px;
+}

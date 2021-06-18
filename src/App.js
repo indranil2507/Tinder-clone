@@ -40,16 +40,22 @@ function App() {
 
           <SideHeader />
           <Switch>
-            <Route exact path="/">
+          <div class="scrollbar" id="style-4">
+         <div class="force-overflow">
+          <Route exact path="/">
                 <Matches/>
             </Route>
             <Route exact path="/messages">
                 <Messages/>
             </Route>
+
+        </div>
+      </div>
+           
            </Switch> 
         </div>
         <div className="mainSection">
-        <Header/>
+        {/* <Header/> */}
        <TinderCards/>
        <SwipeButton />
 

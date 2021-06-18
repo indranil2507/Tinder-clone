@@ -24,7 +24,7 @@ const People = [
       image:
         'https://images.unsplash.com/photo-1541600383005-565c949cf777?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGd5bSUyMG1lbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60',
       text:
-        'Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.',
+        'Sriracha literally flexitarian irony, vape marfa unicorn. ',
     },
     {
       id: 4,
@@ -33,7 +33,7 @@ const People = [
       image:
         'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg',
       text:
-        'Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
+        'stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
     },
     {
         id: 5,
@@ -51,7 +51,7 @@ const People = [
         image:
         'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
         text:
-          "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up.",
+          " Bicycle rights tumeric ",
       },
       {
         id: 7,
