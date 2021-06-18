@@ -7,6 +7,9 @@ import TinderCards from './Components/TinderCards';
 import SideHeader from './Components/SideHeader';
 import Matches from './Components/Matches';
 import Messages from './Components/Messages';
+import Hero from './Components/Hero';
+import People from './Components/People';
+import Data from './shared/Data.js'
 import {
   BrowserRouter as Router,
   Route,
@@ -17,6 +20,18 @@ import { MessageSharp } from '@material-ui/icons';
 
 function App() {
   const [loading,setLoading] = useState(true)
+  const [number,setNumber] = useState(0)
+  const [person,setPerson] = useState([])
+
+  const filterPerson=(id)=>{
+    const newperson = Data.filter((item) => item.id === id);
+    setPerson(...newperson);
+    console.log(id)
+    console.log(person)
+  };
+
+
+  
 
   React.useEffect(() => {
     setTimeout(() => {
@@ -34,20 +49,27 @@ function App() {
   }
   else{
     return (
+   
       <Router>
+
         <div className="app">
         <div className="sideSection">
+        {number}
 
           <SideHeader />
           <Switch>
           <div class="scrollbar" id="style-4">
          <div class="force-overflow">
           <Route exact path="/">
-                <Matches/>
+                <Matches />
             </Route>
-            <Route exact path="/messages">
-                <Messages/>
+            <Route path="/messages">
+                <Messages setNumber={setNumber} filterPerson={filterPerson}/>
             </Route>
+            <Route path="/messages/people">
+                <Messages setNumber={setNumber} filterPerson={filterPerson}/>
+            </Route>
+            
 
         </div>
       </div>
@@ -56,8 +78,15 @@ function App() {
         </div>
         <div className="mainSection">
         {/* <Header/> */}
-       <TinderCards/>
-       <SwipeButton />
+        <Route exact path="/">
+                <Hero/>
+            </Route>
+            <Route exact path="/messages">
+                <Hero/>
+            </Route>
+            <Route path="/messages/people">
+                <People person={person} number={number}/>
+            </Route>
 
         </div>
      

@@ -1,15 +1,24 @@
 import React,{useState} from 'react'
 import People from "../shared/Data"
 import "./Messages.css"
+import {Link} from "react-router-dom"
 
-function Matches() {
+function Matches({filterPerson}) {
 
     const [messages,setMessages]= useState(People)
+    const [num,setNum] = useState(5)
+  
+
+    //  const selectNumber=()=>{
+    //     props.number=num;
+    // }
     return (
         <div className="message-container">
+            
              {
                 messages.map((person)=>(
-                   <div className="message" key="person.id">
+                    <Link to="/messages/people"  onClick={() => filterPerson(person.id)}>
+                         <div className="message" key={person.id} >
                        <div className="image">
                            <img src={person.image} alt={person.name} className="message-dp"/>
                        </div>
@@ -19,6 +28,8 @@ function Matches() {
 
                        </div>
                      </div>
+                     </Link>
+                  
             ))}
 
         </div>
