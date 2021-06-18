@@ -1,13 +1,14 @@
 .app{
     display: flex;
     flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
 }
 .sideSection{
-    width:20%;
+    width:23%;
     border-right: 1px solid  #f9f9f9;
     height: 100vh;
     
 }
 .mainSection{
-    width:80%
+    width:77%
 }

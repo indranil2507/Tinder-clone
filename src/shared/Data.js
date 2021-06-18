@@ -93,15 +93,4 @@ const People = [
   
   export default People;
 
-  const Matches=[
-      {
-            id: 1,
-            name: 'susan smith',
-            sex: 'Male',
-            image:
-              'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
-            text:
-              "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up.",
-        },
-        
-  ]
+ 

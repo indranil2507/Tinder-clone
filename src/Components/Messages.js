@@ -1,11 +1,28 @@
-import React from 'react'
+import React,{useState} from 'react'
+import People from "../shared/Data"
+import "./Messages.css"
 
-function Messages() {
+function Matches() {
+
+    const [messages,setMessages]= useState(People)
     return (
-        <div>
-            Messages
+        <div className="message-container">
+             {
+                messages.map((person)=>(
+                   <div className="message" key="person.id">
+                       <div className="image">
+                           <img src={person.image} alt={person.name} className="message-dp"/>
+                       </div>
+                       <div className="Name">
+                       {person.name}
+                       <p style={{fontSize:16}}>Hi There </p>
+
+                       </div>
+                     </div>
+            ))}
+
         </div>
     )
 }
 
-export default Messages
+export default Matches
