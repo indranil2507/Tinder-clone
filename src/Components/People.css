@@ -42,7 +42,7 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
-    height: 630px;
+    height: 650px;
     text-transform: capitalize;
     padding: 0px 200px;
     /* margin-bottom: 50px; */
@@ -70,7 +70,7 @@
 
 }
 .main-footer{
-    height: 70px;
+    max-height: 70px;
     border-top: 2px solid  #cac5c5;
     display: flex;
     justify-content: space-around;
