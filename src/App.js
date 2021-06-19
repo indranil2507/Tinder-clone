@@ -54,14 +54,17 @@ function App() {
 
         <div className="app">
         <div className="sideSection">
-        {number}
+       
 
           <SideHeader />
           <Switch>
           <div class="scrollbar" id="style-4">
          <div class="force-overflow">
           <Route exact path="/">
-                <Matches />
+                <Matches setNumber={setNumber} filterPerson={filterPerson}/>
+            </Route>
+            <Route path="/matches/people">
+                <Matches setNumber={setNumber} filterPerson={filterPerson}/>
             </Route>
             <Route path="/messages">
                 <Messages setNumber={setNumber} filterPerson={filterPerson}/>
@@ -83,6 +86,9 @@ function App() {
             </Route>
             <Route exact path="/messages">
                 <Hero/>
+            </Route>
+            <Route path="/matches/people">
+                <People person={person} number={number}/>
             </Route>
             <Route path="/messages/people">
                 <People person={person} number={number}/>
