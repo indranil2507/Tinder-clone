@@ -2,6 +2,8 @@ import React from 'react'
 import "./People.css"
 import PeopleHero from './PeopleHero'
 import DoneAllIcon from '@material-ui/icons/DoneAll';
+import {AiOutlinePlusCircle} from "react-icons/ai";
+import {Link} from "react-router-dom"
 
 function People(props) {
     // console.log(person)
@@ -13,7 +15,13 @@ function People(props) {
                     <img src={props.person.image} alt={props.person.id} className="head-dp"/>
                     </div>
                  
-                   <p>You matched with {props.person.name} on 13/5/21</p>
+                   <p style={{color:"#959596"}}>You matched with {props.person.name} on 13/5/21</p>
+                   <div className="toggle-icon">
+                       <Link to="/">
+                       <AiOutlinePlusCircle/>
+                       </Link>
+                     
+                   </div>
                 </div>
                 <div className="main-hero">
                     <p style={{marginBottom:25}}>You Matched with {props.person.name}</p>
@@ -22,7 +30,12 @@ function People(props) {
                     <button className="btn"><DoneAllIcon fontSize="small"/>{" "} Get Read Receips</button>
                 </div>
                 <div className="main-footer">
-                    footer
+                   <div className="input">
+                       Type your message here
+                   </div>
+                   <div className="send-button">
+                       SEND
+                   </div>
                 </div>
 
             </div>

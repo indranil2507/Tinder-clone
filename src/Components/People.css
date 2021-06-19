@@ -72,6 +72,19 @@
 .main-footer{
     height: 70px;
     border-top: 2px solid  #cac5c5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    color: #959596;
+}
+.send-button{
+    padding: 8px 20px;
+    background-image:  linear-gradient(to right,#ff006e,#ff6641);
+    border-radius: 30px;
+    margin-left: 250px;
+    color:#f9f9f9;
+    cursor: pointer;
 }
 
 .side-image{
@@ -120,3 +133,30 @@
     letter-spacing: 1.5px;
     cursor: pointer;
 }
+.Name{
+    font-size: 36px;
+    padding:25px 22px;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+.info{
+    color: #959596;
+    line-height: 30px;
+    padding: 5px 22px;
+
+
+}
+.toggle-icon {
+    margin-left: 25%!important;
+    color: #959596 !important;
+}
+.toggle-icon:hover{
+    animation: mymove 2s;
+    cursor: pointer;
+}
+.toggle-icon a{
+    color: #959596;
+}
+@keyframes mymove {
+    50% {transform: rotate(90deg);}
+  }

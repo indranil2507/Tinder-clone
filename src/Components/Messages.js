@@ -22,7 +22,7 @@ function Matches({filterPerson}) {
                        <div className="image">
                            <img src={person.image} alt={person.name} className="message-dp"/>
                        </div>
-                       <div className="Name">
+                       <div className="name">
                        {person.name}
                        <p style={{fontSize:16}}>Hi There </p>
 
