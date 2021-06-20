@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "./People.css"
 import PeopleHero from './PeopleHero'
 import DoneAllIcon from '@material-ui/icons/DoneAll';
@@ -6,6 +6,7 @@ import {AiOutlinePlusCircle} from "react-icons/ai";
 import {Link} from "react-router-dom"
 
 function People(props) {
+    const[large,setLarge] = useState("false")
     // console.log(person)
     return (
         <div className="people-section">
@@ -23,7 +24,7 @@ function People(props) {
                      
                    </div>
                 </div>
-                <div className="main-hero">
+                <div>
                     <p style={{marginBottom:25}}>You Matched with {props.person.name}</p>
                     <img src={props.person.image} alt={props.person.id} className="hero-dp"/>
                     <p>Know when {props.person.name} has read your message</p>
