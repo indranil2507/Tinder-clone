@@ -42,11 +42,24 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
-    height: 650px;
+    min-height: 620px;
     text-transform: capitalize;
     padding: 0px 200px;
+    /* animation: centre-animation all 0.8s ease once alternate; */
     /* margin-bottom: 50px; */
 }
+/* @keyframes centre-animation{
+    0% {
+        transform: scaleX(1.5);
+        transform: scaleY(1.1);
+      }
+      100% {
+        transform: scaleX(0.8);
+        ransform: scaleY(0.8);
+      }
+} */
+
+
 .hero-dp{
     width: 200px;
     height: 200px;
@@ -70,7 +83,7 @@
 
 }
 .main-footer{
-    max-height: 70px;
+    height: 70px;
     border-top: 2px solid  #cac5c5;
     display: flex;
     justify-content: space-around;

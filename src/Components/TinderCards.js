@@ -79,7 +79,7 @@ function TinderCards() {
                 Dislikes:{dislikes}
             </div>
         <div className="superlikes">
-                SUperLikes:{superlikes}
+                SuperLikes:{superlikes}
             </div>
             <div className="likes">
                 Likes:{likes}
